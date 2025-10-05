@@ -3,4 +3,11 @@
   "name": "poesy-api",
   "main": "src/index.ts",
   "compatibility_date": "2025-10-05",
+  "r2_buckets": [
+    {
+      "bucket_name": "poesy-images",
+      "binding": "POESY_IMAGES",
+      "remote": true,
+    },
+  ],
 }

@@ -1,21 +1,10 @@
-```txt
-npm install
-npm run dev
-```
+# Poesy API
 
-```txt
-npm run deploy
-```
+A Cloudflare Workers API that generates poems based on images using OpenAI's GPT-4o vision model.
 
-[For generating/synchronizing types based on your Worker configuration run](https://developers.cloudflare.com/workers/wrangler/commands/#types):
+## Features
 
-```txt
-npm run cf-typegen
-```
-
-Pass the `CloudflareBindings` as generics when instantiation `Hono`:
-
-```ts
-// src/index.ts
-const app = new Hono<{ Bindings: CloudflareBindings }>()
-```
+- 📸 Upload images via multipart/form-data
+- ☁️ Store images in Cloudflare R2 bucket
+- 🤖 Generate contextual poems using OpenAI's vision capabilities
+- ⚡ Serverless deployment with Cloudflare Workers
